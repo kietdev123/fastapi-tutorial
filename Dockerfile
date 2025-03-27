@@ -1,5 +1,5 @@
 # Sử dụng Python 3.10
-FROM python:3.10
+FROM python:3.12
 
 # Đặt thư mục làm việc
 WORKDIR /app

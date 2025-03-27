@@ -7,6 +7,9 @@ services:
     ports:
       - "8000:8000"
     restart: always
+    volumes:
+      - .:/app # Mount thư mục code vào container
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload # Auto-reload khi file thay đổi
 
   nginx:
     image: nginx:latest
